@@ -4,6 +4,7 @@ services:
   mysql:
     build:
       context: ./mysql
+    restart: always
     env_file:
       - ./.env
     volumes:
@@ -12,10 +13,11 @@ services:
   wordpress:
     build:
       context: ./wordpress
+    restart: always
     env_file:
       - ./.env
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
       - wp:/var/www/html
     depends_on:
