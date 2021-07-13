@@ -7,6 +7,9 @@
 
 ```
 MYSQL_ROOT_PASSWORD={{ mysqlのアドミンパスワード }}
+MYSQL_DATABASE=wordpress
+MYSQL_USER=wordpress
+MYSQL_PASSWORD={{ wordpressの接続用パスワード }}
 
 WORDPRESS_DB_HOST=mysql:3306
 WORDPRESS_DB_NAME=wordpress
