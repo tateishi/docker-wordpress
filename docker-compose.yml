@@ -23,6 +23,19 @@ services:
     depends_on:
       - mysql
 
+  pma:
+    build:
+      context: ./phpmyadmin
+    restart: always
+    env_file: .env
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: mysql
+    links:
+      - mysql
+    ports:
+      - "8080:80"
+
 volumes:
   db:
   wp:

@@ -16,4 +16,9 @@ WORDPRESS_DB_NAME=wordpress
 WORDPRESS_DB_USER=wordpress
 WORDPRESS_DB_PASSWORD={{ wordpressの接続用パスワード }}
 
+PMA_ARBITRARY=1
+PMA_HOST=mysql
+PMA_USER=wordpress
+PMA_PASSWORD={{ wordpressの接続用パスワード }}
+
 ```
