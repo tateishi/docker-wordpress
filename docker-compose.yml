@@ -28,9 +28,6 @@ services:
       context: ./phpmyadmin
     restart: always
     env_file: .env
-    environment:
-      PMA_ARBITRARY: 1
-      PMA_HOST: mysql
     links:
       - mysql
     ports:
