@@ -1,0 +1,14 @@
+MYSQL_ROOT_PASSWORD=mysqlpassword
+MYSQL_DATABASE=wordpress
+MYSQL_USER=wordpress
+MYSQL_PASSWORD=wppassword
+
+WORDPRESS_DB_HOST=mysql:3306
+WORDPRESS_DB_NAME=wordpress
+WORDPRESS_DB_USER=wordpress
+WORDPRESS_DB_PASSWORD=wppassword
+
+PMA_ARBITRARY=1
+PMA_HOST=mysql
+PMA_USER=wordpress
+PMA_PASSWORD=wppassword
