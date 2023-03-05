@@ -33,6 +33,18 @@ services:
     ports:
       - "8080:80"
 
+  fb:
+    build:
+      context: ./filebrowser
+    restart: always
+    env_file: .env
+    ports:
+      - "8081:80"
+    volumes:
+      - fb-config:/config
+      - wp:/data
+
 volumes:
   db:
   wp:
+  fb-config:
