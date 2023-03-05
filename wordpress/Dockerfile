@@ -1,1 +1,1 @@
-FROM wordpress:5.9.3-php8.1-apache
+FROM wordpress:6.1.1-apache
